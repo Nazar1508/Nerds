@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+.main-header {
+	margin: 0;
+	padding: 0;
+	min-width: 1200px;
+	padding-top: 50px;
+	background-color: #eeeeee;
+}
+.main-header .container {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1160px;
+	min-height: 100px;
+	position: relative;
+}
+.main-navigation .main-header-logo {
+	position: absolute;
+}
+.main-navigation .wpapper {
+	display: flex;
+	padding-top: 30px;
+	margin-left: 380px;
+	text-transform: uppercase;
+}
+.main-navigation .site-navigation,
+.main-navigation .basket {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.main-navigation .site-navigation {
+	display: flex;
+}
+.site-navigation li {
+	margin-right: 50px;
+}
+.site-navigation a,
+.basket a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: 500;
+}
+.main-navigation .basket {
+	display: flex;
+	margin-left: auto;
+}
+.basket svg {
+	margin-right: 25px;
+	align-self: center;
+	fill: #a6a6a6;
+}
