@@ -7,6 +7,15 @@ body {
 	font-weight: 400;
 	color: #000000;
 }
+a {
+	text-decoration: none;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0, 0, 0, 0);
+}
 .main-header {
 	margin: 0;
 	padding: 0;
@@ -14,7 +23,7 @@ body {
 	padding-top: 50px;
 	background-color: #eeeeee;
 }
-.main-header .container {
+.container {
 	margin: 0 auto;
 	padding: 0;
 	max-width: 1160px;
@@ -45,7 +54,6 @@ body {
 .site-navigation a,
 .basket a {
 	color: #000000;
-	text-decoration: none;
 	font-weight: 500;
 }
 .main-navigation .basket {
@@ -56,4 +64,36 @@ body {
 	margin-right: 25px;
 	align-self: center;
 	fill: #a6a6a6;
+}
+main {
+	background-color: #eeeeee;
+	min-width: 1200px;
+}
+.slider {
+	position: relative;
+}
+.slider-item {
+	display: none;
+}
+.slider-item h3 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 27px;
+	max-width: 600px;
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+.slider-item p {
+	max-width: 430px;
+	margin: 0;
+	margin-bottom: 38px;
+}
+.slider-item:nth-child(1) {
+	display: block;
+}
+.slider-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
