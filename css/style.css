@@ -10,6 +10,9 @@ body {
 a {
 	text-decoration: none;
 }
+img {
+	width: 100%;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -224,6 +227,8 @@ main {
 	background-color: #efc84a;
 }
 .about-us .container {
+	display: flex;
+	justify-content: space-between;
 	padding: 80px 0;
 	border-bottom: 2px solid #eeeeee;
 }
@@ -261,4 +266,67 @@ main {
 }
 .description-item:last-child {
 	margin: 0;
+}
+.statistics {
+	width: 360px;
+}
+.statistics b {
+	display: block;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 50px;
+}
+.statistics .percentages {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 10px;
+	padding-bottom: 25px;
+}
+.percentages {
+	padding-right: 14px;
+}
+.percentages:last-child {
+	margin: 0;
+}
+.percentages sup {
+	font-size: 30px;
+}
+.details {
+	line-height: 18px;
+}
+.partners .container {
+	padding: 45px 0;
+    border-bottom: 2px solid #eeeeee;
+}
+.partners .partners-list {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+.partners-item {
+	position: relative;
+}
+.partners-item::after {
+	content: "";
+	width: 2px;
+	height: 52px;
+	background-color: #eeeeee;
+	position: absolute;
+	top: 0;
+    left: 243px;
+}
+.partners-item:last-child::after {
+	display: none;
+}
+.map {
+	margin-top: 80px;
+	position: relative;
+}
+.map .marker {
+	position: absolute;
+	width: 231px;
+	height: 190px;
+	top: 40px;
+    left: 767px;
 }
