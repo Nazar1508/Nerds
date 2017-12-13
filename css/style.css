@@ -319,14 +319,28 @@ main {
 .partners-item:last-child::after {
 	display: none;
 }
+.map .container {
+	min-height: 230px; 
+	padding-top: 55px;
+	z-index: 2;
+}
 .map {
 	margin-top: 80px;
-	position: relative;
+	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+	background-size: cover;
+	min-height: 420px;
 }
-.map .marker {
-	position: absolute;
-	width: 231px;
-	height: 190px;
-	top: 40px;
-    left: 767px;
+.map .address {
+	width: 320px;
+	text-align: center;
+	padding: 50px 20px;
+	background-color: #ffffff;
+}
+.address p {
+	padding: 0 55px;
+}
+.button-address {
+	margin: 0 auto;
 }
