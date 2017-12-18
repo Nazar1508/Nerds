@@ -344,3 +344,43 @@ main {
 .button-address {
 	margin: 0 auto;
 }
+.my-footer {
+	padding-top: 70px;
+}
+.my-footer .container {
+	display: flex;
+}
+.social-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	margin-right: 140px;
+}
+.social-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e1e1e1;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.social-item:last-child {
+	margin-right: 0;
+}
+.social-button {
+	padding: 30px;
+}
+.my-footer h3 {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+}
+.my-footer span {
+	line-height: 22px;
+}
+
