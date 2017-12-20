@@ -59,6 +59,14 @@ img {
 	color: #000000;
 	font-weight: 500;
 }
+.site-navigation a:hover,
+.basket a:hover {
+	color: #fb565a;
+}
+.site-navigation a:focus,
+.basket a:focus {
+	color: #bdbdbd;
+}
 .main-navigation .basket {
 	display: flex;
 	margin-left: auto;
@@ -185,11 +193,10 @@ main {
 	border-radius: 3px;
 	border: none;
 }
-.button:hover,
-.button:focus {
+.button:hover {
 	background-color: #e74246;
 }
-.button:active {
+.button:focus {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #d7373b;
 	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
@@ -227,8 +234,20 @@ main {
 .button-greeen {
 	background-color: #00ca74
 }
+.button-greeen:hover {
+	background-color: #00bc6c;
+}
+.button-greeen:focus {
+	background-color: #00aa62;
+}
 .button-yellow {
 	background-color: #efc84a;
+}
+.button-yellow:hover {
+	background-color: #eab534;
+}
+.button-yellow:focus {
+	background-color: #e5a722;
 }
 .about-us .container {
 	display: flex;
@@ -354,6 +373,15 @@ main {
 .partners-item:last-child::after {
 	display: none;
 }
+.partners-item a {
+	opacity: 0.2;
+}
+.partners-item a:hover {
+	opacity: 1;
+}
+.partners-item a:focus {
+	opacity: 0.1;
+}
 .map .container {
 	min-height: 230px; 
 	padding-top: 55px;
@@ -415,8 +443,17 @@ main {
 .social-item:last-child {
 	margin-right: 0;
 }
+.social-item:hover {
+	background-color: #e74246;
+}
+.social-item:focus {
+	background-color: #d7373b;
+}
 .social-button {
 	padding: 30px;
+}
+.social-button:focus path {
+	fill: #e37376;
 }
 .my-footer h3 {
 	font-size: 36px;
@@ -429,5 +466,30 @@ main {
 }
 .my-footer span {
 	line-height: 22px;
+}
+/*Спливаюча форма*/
+.modal {
+	position: fixed;
+	background-color: #ffffff;
+	z-index: 2;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+.modal-login {
+	top: 88px;
+  	left: 50%;
+  	transform: translateX(-50%);
+	width: 760px;
+	padding: 85px 100px;
+}
+.modal-close {
+	position: absolute;
+	top: 78px;
+	right: 90px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background-color: red;
+	border: 0;
+	cursor: pointer;
 }
 
