@@ -10,11 +10,20 @@ body {
 a {
 	text-decoration: none;
 }
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	clip: rect(0, 0, 0, 0);
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .main-header {
 	margin: 0;
@@ -570,7 +579,7 @@ fieldset {
 	margin: 0;
 	padding: 0;
 }
-.form-filters {
+.filter {
 	width: 260px;
 }
 .range {
@@ -602,4 +611,48 @@ fieldset {
     position: absolute;
     top: 30px;
     left: 143px;
+}
+.cost {
+	display: flex;
+	justify-content: space-between;
+}
+.cost input {
+	font-family: inherit;
+    width: 66px;
+    padding: 8px 5px;
+    text-align: center;
+    background-color: #eeeeee;
+    border: 2px solid #eeeeee;
+    border-radius: 3px;
+}
+.net {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.net-option label {
+	position: relative;
+	display: block;
+	padding-left: 40px;
+}
+.filter-input-radio + label::before {
+	content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    border: 5px solid #a6a6a6;
+    border-radius: 50%;
+}
+.filter-input-radio:checked + label::after {
+	content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 9px;
+    top: 6px;
+    background-color: #a6a6a6;
+    border: 1px solid #a6a6a6;
+    border-radius: 50%;
 }

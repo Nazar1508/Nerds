@@ -43,7 +43,7 @@
 				<h2 class="visually-hidden">
 					Фильтр
 				</h2>
-				<form class="form-filters" method="get" action="https://echo.htmlacademy.ru">
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 					<section>
 						<fieldset>
 							<h2>
@@ -59,6 +59,37 @@
 									<img src="img/filter-button.png" width="20" height="23" alt="Правый ползунок">
 								</div>
 							</div>
+							<div class="cost">
+								<p class="cost-range">
+									<label for="min-cost">
+										ОТ
+									</label>
+									<input id="min-cost" type="text" name="min-cost" placeholder="0">
+								</p>
+								<p class="cost-range">
+									<label for="max-cost">
+										ДО
+									</label>
+									<input id="max-cost" type="text" name="max-cost" placeholder="15000">
+								</p>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Сетка:</legend>
+							<ul class="net">
+								<li class="net-option">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" id="adaptive" checked>
+									<label for="adaptive">Адаптивная</label>
+								</li>
+								<li class="net-option">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" id="fixed">
+									<label for="fixed">Фиксированная</label>
+								</li>
+								<li class="net-option">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" id="rubber">
+									<label for="rubber">Резиновая</label>
+								</li>
+							</ul>
 						</fieldset>
 					</section>
 				</form>
