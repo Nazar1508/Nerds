@@ -44,11 +44,9 @@
 					Фильтр
 				</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-					<section>
+					<section class="filter-option">
 						<fieldset>
-							<h2>
-								Стоимость
-							</h2>
+							<h2>Стоимость</h2>
 							<div class="range">
 								<div class="line"></div>
 								<div class="line-left"></div>
@@ -64,13 +62,13 @@
 									<label for="min-cost">
 										ОТ
 									</label>
-									<input id="min-cost" type="text" name="min-cost" placeholder="0">
+									<input id="min-cost" type="text" name="min-cost" placeholder="0" value="0">
 								</p>
 								<p class="cost-range">
 									<label for="max-cost">
 										ДО
 									</label>
-									<input id="max-cost" type="text" name="max-cost" placeholder="15000">
+									<input id="max-cost" type="text" name="max-cost" placeholder="15000" value="15000">
 								</p>
 							</div>
 						</fieldset>
@@ -91,6 +89,32 @@
 								</li>
 							</ul>
 						</fieldset>
+						<fieldset>
+							<legend>Оcобенности:</legend>
+							<ul class="features-list">
+								<li class="features-item">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked="">
+									<label for="slider">Слайдер</label>
+								</li>
+								<li class="features-item">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
+									<label for="advantages">Блок преимуществ</label>
+								</li>
+								<li class="features-item">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked="">
+									<label for="news">Новости</label>
+								</li>
+								<li class="features-item">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery">
+									<label for="gallery">Галерея</label>
+								</li>
+								<li class="features-item">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="basket">
+									<label for="basket">Корзина</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button type="submit">ПОКАЗАТЬ</button>
 					</section>
 				</form>
 			</div>

@@ -606,11 +606,13 @@ fieldset {
 	position: absolute;
    	top: 30px;
     left: 17px;
+    cursor: pointer;
 }
 .range-right img {
     position: absolute;
     top: 30px;
     left: 143px;
+    cursor: pointer;
 }
 .cost {
 	display: flex;
@@ -625,10 +627,37 @@ fieldset {
     border: 2px solid #eeeeee;
     border-radius: 3px;
 }
-.net {
+.filter h2 {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.filter legend {
+	font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+fieldset {
+	margin-bottom: 20px;
+}
+.filter-option label {
+	color: #283136;
+}
+.filter-option fieldset:last-of-type {
+	margin-bottom: 0;
+}
+.filter ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+.net-option {
+	margin-bottom: 20px;
+}
+.net-option:last-child {
+	margin-bottom: 0;
 }
 .net-option label {
 	position: relative;
@@ -655,4 +684,42 @@ fieldset {
     background-color: #a6a6a6;
     border: 1px solid #a6a6a6;
     border-radius: 50%;
+}
+.features-item {
+	margin-bottom: 20px;
+}
+.features-item:last-child {
+	margin-bottom: 0;
+}
+.features-item label {
+	padding-left: 40px;
+	position: relative;
+}
+.filter-input-checkbox + label::before {
+	content: "";
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    border: 2px solid #a6a6a6;
+    border-radius: 3px;
+}
+.filter-input-checkbox:checked + label::after {
+	content: "";
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    left: 6px;
+    top: -3px;
+    background-image: url(../img/сheсkbox.svg);
+    background-repeat: no-repeat;
+}
+.filter button {
+	width: 100%;
+	border: none;
+	padding: 15px 0;
+	margin-top: 45px;
+	background-color: #eeeeee;
+	font-family: inherit;
 }
