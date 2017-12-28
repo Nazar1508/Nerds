@@ -10,6 +10,15 @@ body {
 a {
 	text-decoration: none;
 }
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+button {
+	border: none;
+	background: none;
+}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -630,6 +639,7 @@ fieldset {
 .filter h2 {
     font-size: 18px;
     line-height: 30px;
+    margin-top: 0;
     text-transform: uppercase;
 }
 .filter legend {
@@ -722,4 +732,60 @@ fieldset {
 	margin-top: 45px;
 	background-color: #eeeeee;
 	font-family: inherit;
+}
+.sorting {
+	display: flex;
+	justify-content: space-between;
+	width: 760px;
+}
+.sorting ul {
+	display: flex;
+}
+.sorting a {
+	display: block;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #cacaca;
+}
+.sorting-item {
+	margin-right: 25px;
+}
+.sorting-item .active {
+	color: #000000;
+}
+.sorting-item:last-child {
+	margin: 0;
+}
+.sorting-buttons {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+.sorting-buttons .button-down {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	margin-right: 18px;
+	border-style: solid;
+	border-width: 0 5.5px 10px 5.5px;
+	border-color: transparent transparent #010101 transparent;
+}
+.sorting-buttons .button-up {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	border-style: solid;
+	border-width: 10px 5.5px 0 5.5px;
+	border-color: #a6a6a6 transparent transparent transparent;
+}
+.container-wpapper {
+	display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin: 0 auto;
+	padding: 0;
+	max-width: 1160px;
 }
