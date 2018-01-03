@@ -803,6 +803,7 @@ fieldset {
 .our-partners-item {
 	position: relative;
 	width: 360px;
+	margin-bottom: 35px;
 }
 .our-partners-item img {
 	margin-top: -6px;
@@ -836,4 +837,25 @@ fieldset {
     color: #ffffff;
     line-height: 18px;
     padding: 15px 52px;
+}
+.pagination-list {
+	display: flex;
+}
+.pagination-item:not(:last-child) {
+	margin-right: 10px;
+}
+.pagination-item a {
+	padding: 15px 21px;
+	border: 3px solid #dbdbdb;
+	background-color: #dbdbdb;
+	color: #000000;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.pagination-item:last-child a {
+	padding: 15px 75px;
+}
+.pagination-item .active {
+	background-color: #ffffff;
 }
