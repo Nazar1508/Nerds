@@ -749,6 +749,14 @@ fieldset:nth-child(2) {
 	background-color: #eeeeee;
 	font-family: inherit;
 }
+.filter button:hover {
+	background-color: #dfdfdf;
+}
+.filter button:focus {
+	background-color: #d5d5d5;
+	color: #c1c1c1;
+	border-top: 3px solid #bfbfbf;
+}
 .sorting {
 	display: flex;
 	justify-content: space-between;
@@ -889,4 +897,49 @@ fieldset:nth-child(2) {
 .catalog .main-header {
 	margin-bottom: 53px;
 	min-height: 307px;
+}
+.main-header-logo:hover path  {
+	fill: #303030;
+}
+.main-header-logo:focus path  {
+	fill: #a6a6a6;
+}
+.filter-input-radio + label:hover {
+	color: #000000;
+}
+.filter-input-radio + label:hover::before {
+    border: 4px solid #4d4d4d;
+}
+.filter-input-radio:checked + label:hover::after {
+    background-color: #4d4d4d;
+    border: 1px solid #4d4d4d; 
+}
+.filter-input-radio:disabled + label {
+	color: #ededed;
+}
+.filter-input-radio:disabled + label::before {
+    border: 4px solid #ededed;
+}
+.filter-input-radio:checked:disabled + label::after {
+   	background-color: #ededed;
+    border: 1px solid #ededed;  
+}
+
+.filter-input-checkbox + label:hover {
+	color: #000000;
+}
+.filter-input-checkbox + label:hover::before {
+    border: 2px solid #4d4d4d;
+}
+.filter-input-checkbox:checked + label:hover::after {
+    background-image: url(../img/сheсkbox-hover.svg); 
+}
+.filter-input-checkbox:disabled + label {
+	color: #ededed;
+}
+.filter-input-checkbox:disabled + label::before {
+    border: 2px solid #ededed;
+}
+.filter-input-checkbox:checked:disabled + label::after {
+    background-image: url(../img/сheсkbox-disabled.svg); 
 }
