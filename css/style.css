@@ -520,16 +520,22 @@ main {
 	height: 3px;
 	top: 10px;
 	left: 2px;
-
 	background-color: #fecccd;
 }
 .modal-close::before {
   transform: rotate(45deg);
 }
-
 .modal-close::after {
   transform: rotate(-45deg);
 }
+.modal-close:hover::before,
+.modal-close:hover::after {
+	background-color: #fb565a;
+} 
+.modal-close:active::before,
+.modal-close:active::after {
+	background-color: #ffeeee;
+} 
 .login-form {
 	font-family: inherit;
 }
@@ -558,6 +564,20 @@ label {
 	padding: 10px 13px;
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
+}
+.login-form input:hover,
+.login-form textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+.login-form input:focus,
+.login-form textarea:focus {
+	outline: none;
+	color: #444444;
+	border: 2px solid #000000;
+}
+.login-form input:invalid {
+	color: #e74246;
+	border: 2px solid #e74246;
 }
 .login-form .wrapper {
 	display: flex;
@@ -864,13 +884,14 @@ fieldset:nth-child(2) {
     padding: 24px 0 40px;
     background-color: #eeeeee;
     position: absolute;
-    top: 387px;
+    bottom: 0;
 }
 .catalog .description h3 {
 	margin-top: 0;
     margin-bottom: -1px;
 	font-size: 18px;
 	line-height: 30px;
+	color: #000000;
 }
 .catalog .description-text{
 	padding: 0 78px;
@@ -899,7 +920,7 @@ fieldset:nth-child(2) {
 .our-partners-item:not(:first-child):hover path {
 	fill: #4d4d4d;
 }
-.description a {
+.description .price {
     background-color: #fb565a;
     border: 1px solid #fb565a;
     border-radius: 3px;
@@ -908,10 +929,10 @@ fieldset:nth-child(2) {
     padding: 13px 61px;
     cursor: pointer;
 }
-.description a:hover {
+.description .price:hover {
 	background-color: #e74246;
 }
-.description a:active {
+.description .price:active {
 	background-color: #d7373b;
 }
 .pagination-list {
@@ -923,12 +944,22 @@ fieldset:nth-child(2) {
 }
 .pagination-item a {
 	padding: 12px 18px;
-	border: 3px solid #dbdbdb;
-	background-color: #dbdbdb;
+	border: 3px solid #eeeeee;
+	background-color: #eeeeee;
 	color: #000000;
 	line-height: 18px;
 	text-transform: uppercase;
 	font-weight: 500;
+}
+.pagination-item a:hover {
+	background-color: #dfdfdf;
+	border: 3px solid #dfdfdf;
+}
+.pagination-item a:active {
+	color: #a9a9a9;
+	background-color: #d5d5d5;
+	border: 3px solid #d5d5d5;
+	border-top-color: #bfbfbf;
 }
 .pagination-item:last-child a {
 	padding: 12px 75px;
