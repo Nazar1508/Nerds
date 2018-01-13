@@ -591,6 +591,9 @@ textarea {
 	margin-bottom: 18px;
     width: 260px;
 }
+.modal-show {
+  display: block;
+}
 /*modal-window*/
 .modal-window .modal-login {
 	display: block;
